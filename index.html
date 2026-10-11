@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A responsive navbar built with Tailwind CSS">
+    <title>NovaTech | Responsive Navbar</title>
+</head>
+
+<body class="min-h-screen bg-slate-50 font-sans text-slate-800">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white shadow-sm">
+        <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Main navigation">
+
+            <div class="flex h-20 items-center justify-between">
+
+                <!-- Logo -->
+                <a href="#home" class="flex items-center gap-3 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">
+
+                    <span class="flex h-11 w-11 items-center justify-center rounded-xl bg-blue-600 text-xl font-extrabold text-white">
+                        N
+                    </span>
+
+                    <span class="text-xl font-extrabold text-slate-900">
+                        Nova<span class="text-blue-600">Tech</span>
+                    </span>
+                </a>
+
+                <!-- Desktop navigation -->
+                <div class="hidden items-center gap-2 md:flex">
+
+                    <a href="#home" class="rounded-lg bg-blue-50 px-4 py-2.5 text-sm font-semibold text-blue-700 transition hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Home
+                    </a>
+
+                    <a href="#about" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        About
+                    </a>
+
+                    <a href="#services" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Services
+                    </a>
+
+                    <a href="#projects" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Projects
+                    </a>
+
+                    <a href="#contact" class="rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Contact
+                    </a>
+
+                </div>
+
+                <!-- Mobile hamburger button -->
+                <button id="menu-button" type="button" class="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-2xl transition hover:bg-blue-50 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 md:hidden"
+                    aria-label="Open navigation menu" aria-controls="mobile-menu" aria-expanded="false">
+
+                    <span id="menu-icon" aria-hidden="true">☰</span>
+                </button>
+
+            </div>
+
+            <!-- Mobile navigation menu -->
+            <div id="mobile-menu" class="hidden border-t border-slate-100 py-4 md:hidden">
+
+                <div class="flex flex-col gap-1">
+
+                    <a href="#home" class="rounded-lg bg-blue-50 px-4 py-3 text-sm font-semibold text-blue-700 transition hover:bg-blue-100 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Home
+                    </a>
+
+                    <a href="#about" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        About
+                    </a>
+
+                    <a href="#services" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Services
+                    </a>
+
+                    <a href="#projects" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Projects
+                    </a>
+
+                    <a href="#contact" class="rounded-lg px-4 py-3 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-blue-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600">
+                        Contact
+                    </a>
+
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main id="home" class="mx-auto max-w-7xl px-4 py-12 sm:px-6 sm:py-20 lg:px-8">
+
+        <!-- Hero section -->
+        <section class="rounded-3xl bg-gradient-to-br from-blue-700 to-indigo-950 px-6 py-16 text-center text-white shadow-xl sm:px-12 sm:py-24">
+
+            <p class="text-sm font-bold uppercase tracking-widest text-blue-200">
+                Welcome to NovaTech
+            </p>
+
+            <h1 class="mt-5 text-3xl font-extrabold tracking-tight sm:text-5xl">
+                Responsive Navigation
+            </h1>
+
+            <p class="mx-auto mt-5 max-w-2xl leading-7 text-blue-100">
+                We create modern digital experiences with clean design, responsive layouts, and accessible navigation.
+            </p>
+
+            <a href="#services" class="mt-8 inline-flex rounded-xl bg-white px-6 py-3 font-bold text-blue-700 transition hover:bg-blue-50 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white">
+                Explore Services →
+            </a>
+
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="scroll-mt-24 py-16 text-center">
+
+            <h2 class="text-2xl font-extrabold text-slate-900">
+                About NovaTech
+            </h2>
+
+            <p class="mx-auto mt-4 max-w-2xl leading-7 text-slate-600">
+                Our goal is to build useful websites that work beautifully on mobile phones, tablets, and desktop computers.
+            </p>
+
+        </section>
+
+        <!-- Services section -->
+        <section id="services" class="scroll-mt-24 py-8">
+
+            <h2 class="mb-8 text-center text-2xl font-extrabold text-slate-900">
+                Our Services
+            </h2>
+
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Web Development
+                    </h3>
+
+                    <p class="mt-2 leading-6 text-slate-600">
+                        Responsive websites built for different screen sizes.
+                    </p>
+
+                </article>
+
+                <article id="projects" class="scroll-mt-24 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+                    <h3 class="text-lg font-bold text-slate-900">
+                        Our Projects
+                    </h3>
+
+                    <p class="mt-2 leading-6 text-slate-600">
+                        Practical digital solutions with modern user interfaces.
+                    </p>
+
+                </article>
+
+                <article class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+
+                    <h3 class="text-lg font-bold text-slate-900">
+                        User Experience
+                    </h3>
+
+                    <p class="mt-2 leading-6 text-slate-600">
+                        Accessible and user-friendly experiences on every device.
+                    </p>
+
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="scroll-mt-24 py-16 text-center">
+
+            <h2 class="text-2xl font-extrabold text-slate-900">
+                Contact Us
+            </h2>
+
+            <p class="mt-4 text-slate-600">
+                Thank you for visiting NovaTech.
+            </p>
+
+            <a href="mailto:hello@example.com" class="mt-6 inline-flex rounded-xl bg-blue-600 px-6 py-3 font-bold text-white transition hover:bg-blue-700 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-blue-600">
+                Get in Touch
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-200 bg-white px-4 py-6 text-center text-sm text-slate-500">
+        Built with Tailwind CSS | Week 3 Workshop 1
+    </footer>
+
+    <!-- JavaScript for the mobile menu -->
+    <script type="module" src="/src/main.js"></script>
+
+</body>
+
+</html>
